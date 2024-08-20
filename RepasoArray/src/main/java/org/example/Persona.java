@@ -8,6 +8,14 @@ public class Persona {
     char genero;
     Date fechaReg;
 
+    public Persona(){}
+
+    public Persona(String nombre, String estadoAsis, Date fechaReg){
+        this.nombre = nombre;
+        this.estadoAsis = estadoAsis;
+        this.fechaReg = fechaReg;
+    }
+
     public Persona(String nombre, String estadoAsis, char genero) {
         this.nombre = nombre;
         this.estadoAsis = estadoAsis;
@@ -28,5 +36,10 @@ public class Persona {
 
     public void setEstadoAsis(String estadoAsis) {
         this.estadoAsis = estadoAsis;
+    }
+
+    @Override
+    public String toString() {
+        return this.nombre +"\t"+ this.estadoAsis +"\t"+ this.fechaReg;
     }
 }
