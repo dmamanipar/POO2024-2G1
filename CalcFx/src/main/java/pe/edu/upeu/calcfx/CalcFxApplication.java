@@ -1,4 +1,4 @@
-package pe.edu.upeu.CalcFx;
+package pe.edu.upeu.calcfx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CalcFxApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Hola estas funcionando");
 		SpringApplication.run(CalcFxApplication.class, args);
 	}
 
